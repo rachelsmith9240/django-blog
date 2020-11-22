@@ -9,8 +9,6 @@ class Post(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
     published_date = models.DateTimeField(blank=True, null=True)
-    # categories = models.ManyToManyField(Category, blank=True, related_name='posts')
-
 
     def __str__(self):
         return self.title
